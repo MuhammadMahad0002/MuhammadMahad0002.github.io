@@ -90,6 +90,13 @@
       text-align: center;
     }
 
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin: -1rem auto 2.5rem;
+      max-width: 700px;
+    }
+
     .grid {
       display: grid;
       gap: 2rem;
@@ -126,9 +133,9 @@
       opacity: 1;
     }
 
-    .priority-badge {
-      background: linear-gradient(120deg, var(--accent), #facc15);
-      color: #1e293b;
+    .feature-tag {
+      background: rgba(249, 115, 22, 0.2);
+      color: #fed7aa;
       padding: 0.35rem 0.9rem;
       border-radius: 999px;
       font-size: 0.75rem;
@@ -181,6 +188,36 @@
       z-index: 1;
     }
 
+    .mini-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .mini-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 18px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, border 0.2s ease;
+    }
+
+    .mini-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(148, 163, 184, 0.5);
+    }
+
+    .mini-card h4 {
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+
+    .mini-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem 1rem 3rem;
@@ -205,11 +242,12 @@
   </header>
 
   <main class="container" id="projects">
-    <h2 class="section-title">Priority Showcase</h2>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Three standout projects that best represent my skills and the work I want to showcase.</p>
 
     <div class="grid">
       <article class="card">
-        <span class="priority-badge">TOP PRIORITY</span>
+        <span class="feature-tag">FEATURED</span>
         <h3>ZYNRA.PK</h3>
         <p>A modern e-commerce website built with Next.js, preserving original styles while delivering a scalable, production-ready experience.</p>
         <div class="tags">
@@ -221,7 +259,7 @@
       </article>
 
       <article class="card">
-        <span class="priority-badge">TOP PRIORITY</span>
+        <span class="feature-tag">FEATURED</span>
         <h3>Fluency-Pro</h3>
         <p>An interactive JavaScript product built for smooth UX, dynamic interactions, and refined frontend polish.</p>
         <div class="tags">
@@ -233,7 +271,7 @@
       </article>
 
       <article class="card">
-        <span class="priority-badge">TOP PRIORITY</span>
+        <span class="feature-tag">FEATURED</span>
         <h3>N-Body-Gravity</h3>
         <p>A physics-based simulation modeling dynamic particle systems using the N-body algorithm for complex computational behavior.</p>
         <div class="tags">
@@ -242,6 +280,42 @@
           <span class="tag">Makefile</span>
         </div>
         <a class="card-link" href="https://github.com/MuhammadMahad0002/N-Body-Gravity" target="_blank">View on GitHub →</a>
+      </article>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 4rem;">Mini Practice Projects</h2>
+    <p class="section-subtitle">Smaller builds and experiments that show my learning journey and creative practice.</p>
+
+    <div class="mini-grid">
+      <article class="mini-card">
+        <h4>HoenScanner Microservice</h4>
+        <p>Backend microservice focused on scanning and parsing with Java.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/HoenScanner-microservice" target="_blank">View →</a>
+      </article>
+      <article class="mini-card">
+        <h4>Resume Tailor App</h4>
+        <p>TypeScript web app for customizing and tailoring resumes.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/resume-tailor-app" target="_blank">View →</a>
+      </article>
+      <article class="mini-card">
+        <h4>Amazon Clone</h4>
+        <p>HTML/CSS clone focused on layout and styling practice.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/Amazon-Clone" target="_blank">View →</a>
+      </article>
+      <article class="mini-card">
+        <h4>Form Validation</h4>
+        <p>JavaScript form validation practice project.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/Form-Validation" target="_blank">View →</a>
+      </article>
+      <article class="mini-card">
+        <h4>Profile Card</h4>
+        <p>TypeScript profile card UI experiment.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/Profile-Card" target="_blank">View →</a>
+      </article>
+      <article class="mini-card">
+        <h4>Ramadan Reminder</h4>
+        <p>JavaScript reminder app focused on clean UI.</p>
+        <a class="card-link" href="https://github.com/MuhammadMahad0002/Ramadan-Reminder" target="_blank">View →</a>
       </article>
     </div>
   </main>
