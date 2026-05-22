@@ -1,0 +1,224 @@
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 100;
+  background: #111827;
+  color: #f8fafc;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.skip-link:focus-visible {
+  left: 1rem;
+}
+
+.hero {
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__glow {
+  position: absolute;
+  inset: auto 50% 2.5rem;
+  translate: -50% 0;
+  width: min(34rem, 90vw);
+  height: 6rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.45), rgba(34, 211, 238, 0.45));
+  filter: blur(36px);
+  pointer-events: none;
+}
+
+.hero__eyebrow {
+  color: #a5b4fc;
+  font-size: 0.86rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin: 0 0 0.85rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero__subtitle {
+  width: min(700px, 92vw);
+  margin: 1.25rem auto 2rem;
+  color: #d4def2;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  color: #f8fafc;
+  background: linear-gradient(120deg, #6366f1, #22d3ee);
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 18px 40px rgba(7, 11, 30, 0.45);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+}
+
+.btn--secondary {
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 44px rgba(2, 6, 23, 0.55);
+}
+
+.btn:focus-visible,
+.card-link:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto 4rem;
+}
+
+.section-title {
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  text-align: center;
+  margin: 0;
+}
+
+.section-title--spaced {
+  margin-top: 4rem;
+}
+
+.section-subtitle {
+  margin: 0.85rem auto 2rem;
+  text-align: center;
+  color: #cbd5e1;
+  max-width: 760px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card,
+.mini-card {
+  border-radius: 1.1rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.5));
+  backdrop-filter: blur(8px);
+  transition: transform 0.24s ease, border-color 0.24s ease;
+}
+
+.card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover,
+.mini-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(103, 232, 249, 0.6);
+}
+
+.feature-tag {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 0.85rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.2);
+}
+
+.card h3,
+.mini-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.card p,
+.mini-card p {
+  margin: 0;
+  color: #d1daec;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 1.1rem 0 1.3rem;
+}
+
+.tag {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  color: #e0e7ff;
+  background: rgba(99, 102, 241, 0.22);
+  border: 1px solid rgba(99, 102, 241, 0.34);
+}
+
+.card-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #67e8f9;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: fit-content;
+}
+
+.mini-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.mini-card {
+  padding: 1.3rem;
+}
+
+.mini-card p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  color: #cbd5e1;
+  padding: 1.4rem 1rem 2.75rem;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 4.5rem;
+  }
+
+  .card,
+  .mini-card {
+    padding: 1.2rem;
+  }
+}
